@@ -6,6 +6,10 @@ function App() {
   const [value, setValue] = useState('')
   useEffect(() => {
     console.log(`HELLO : ${value}`)
+
+    return () => {
+      console.log('나 사라져요~')
+    }
   }, [value])
 
   return (
