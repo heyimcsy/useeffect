@@ -5,8 +5,8 @@ import { useEffect, useState } from 'react'
 function App() {
   const [value, setValue] = useState('')
   useEffect(() => {
-    console.log('hello')
-  })
+    console.log(`HELLO : ${value}`)
+  }, [value])
 
   return (
     <div>
